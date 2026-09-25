@@ -4,6 +4,20 @@ class Node{
 		Node next;
 		Node(int data){this.data = data;}
 }
+class Stack{
+		private Node top;
+		public void push(int data){
+				Node n1 = new Node(data);
+				n1.next = top;
+				top = n1;
+		}
+		public void pop(){
+				if(top!=null){
+						top = top.next
+				}
+		}
+		
+}
 
 class DSANode{
 	public static void main(String args[]){
