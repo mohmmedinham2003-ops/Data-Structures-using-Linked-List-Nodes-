@@ -1,3 +1,4 @@
+//Stack
 import java.*;
 class Node{
 		int data;
@@ -37,5 +38,20 @@ class DSANode{
 		s1.push(400);
 		s1.push(500);
 		s1.printStack(); //[500, 400, 300, 200, 100]		
+	}
+}
+//Queue
+class Node{
+		int data;
+		int next;
+		Node(int data){this.data = data;}
+}
+class Queue{
+	
+}
+
+class DSANode{
+	public static void main(String args[]){
+	Queue q1 = new Queue();	
 	}
 }
