@@ -47,19 +47,24 @@ class Node{
 		Node(int data){this.data = data;}
 }
 class Queue{
-	
+	private Node front;
+	public void add(int data){
+		Node n1=new Node(data);
+		//find the last node
+		if(isEmpty()){
+			front=n1;
+		}else{
+			Node lastNode=front;
+			while(lastNode.next!=null){
+				lastNode=lastNode.next;
+			}
+			lastNode.next=n1;
+		}
+	}
 }
 
 class DSANode{
 	public static void main(String args[]){
-	Queue q1=new Queue();
-		q1.add(100);
-		q1.add(200);
-		q1.add(300);
-		q1.add(400);
-		q1.add(500);
-		q1.printQueue();//[100, 200, 300, 400, 500]
-		
-		q1.remove();
-		q1.printQueue();//[200, 300, 400, 500]	}
+	Queue q1 = new Queue();	
+	}
 }
