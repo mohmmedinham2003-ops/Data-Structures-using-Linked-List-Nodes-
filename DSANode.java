@@ -87,6 +87,25 @@ class Queue{
 		}
 		return count;
 	}
+
+	public boolean isEmpty(){
+		return front==null;
+	}
+	public void clear(){
+		front=null;
+	}
+	public int search(int data){
+		Node temp=front;
+		int index=0;
+		while(temp!=null){
+			if(temp.data==data){
+				return index;
+			}
+			index++;
+			temp=temp.next;
+		}
+		return -1;
+	}
 	
 }
 
