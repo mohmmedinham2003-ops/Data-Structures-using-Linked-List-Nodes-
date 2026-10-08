@@ -77,6 +77,16 @@ class Queue{
 		}
 		System.out.println(isEmpty() ?"empty]":"\b\b]");
 	}
+
+	public int size(){
+		Node temp=front;
+		int count=0;
+		while(temp!=null){
+			count++;
+			temp=temp.next;
+		}
+		return count;
+	}
 	
 }
 
