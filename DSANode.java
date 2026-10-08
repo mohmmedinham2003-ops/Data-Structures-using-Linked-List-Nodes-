@@ -52,6 +52,14 @@ class Queue{
 
 class DSANode{
 	public static void main(String args[]){
-	Queue q1 = new Queue();	
-	}
+	Queue q1=new Queue();
+		q1.add(100);
+		q1.add(200);
+		q1.add(300);
+		q1.add(400);
+		q1.add(500);
+		q1.printQueue();//[100, 200, 300, 400, 500]
+		
+		q1.remove();
+		q1.printQueue();//[200, 300, 400, 500]	}
 }
